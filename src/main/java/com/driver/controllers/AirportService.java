@@ -19,59 +19,48 @@ public class AirportService {
     }
 
     public String largestAirPortName(){
-
-        String airportName = airportRepository.largestAirPortName();
-        return airportName;
+        return airportRepository.largestAirPortName();;
     }
 
     public String addFlight(Flight flight){
-        String flightAdded = airportRepository.addFlight(flight);
-        return flightAdded;
+        return airportRepository.addFlight(flight);
     }
     public double shortestDistanceofTwoCities(City firstCity, City secondCity){
 
-        double shortestDistance = airportRepository.shortestDistanceofTwoCities(firstCity,secondCity);
-        return shortestDistance;
+        return airportRepository.shortestDistanceofTwoCities(firstCity,secondCity);
     }
 
     public int noOfpeople(Date date, String airportName){
 
-        int peopleNo = airportRepository.noOfpeople(date, airportName);
-        return peopleNo;
+        return airportRepository.noOfpeople(date, airportName);;
     }
 
     public int flightFair(int flightId){
-        int fair = airportRepository.flightFair((flightId));
-        return fair;
+        return airportRepository.flightFair((flightId));
     }
 
     public String bookTicket(int flightId, int passengerId){
-        String ticketBooked = airportRepository.bookTicket(flightId,passengerId);
-        return ticketBooked;
+        return airportRepository.bookTicket(flightId,passengerId);
     }
 
     public String cancelTicket(int flightId, int passegerId){
-        String ticketCancel = airportRepository.cancelTicket(flightId, passegerId);
-        return ticketCancel;
+        return airportRepository.cancelTicket(flightId, passegerId);
     }
 
     public int allBooking(int passengerId){
-        int booking = airportRepository.allBooking(passengerId);
-        return booking;
+        return airportRepository.allBooking(passengerId);
     }
     public String airportNameByFlightId(int flightId){
 
-        String airportName = airportRepository.airportNameByFlightId(flightId);
-        return airportName;
+
+        return airportRepository.airportNameByFlightId(flightId);
     }
 
     public int revenueOfFlight(int flightId){
-        int revenue = airportRepository.revenueOfFlight(flightId);
-        return revenue;
+        return airportRepository.revenueOfFlight(flightId);
     }
 
     public String addPassenger(Passenger passenger){
-        String passengerAdded = addPassenger(passenger);
-        return passengerAdded;
+        return addPassenger(passenger);
     }
 }
