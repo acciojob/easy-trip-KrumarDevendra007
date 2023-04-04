@@ -133,7 +133,7 @@ public class AirportRepository {
 
             List<Integer> passengers  = entry.getValue();
             for(Integer passenger : passengers){
-                if(passenger==passengerId){
+                if(Objects.equals(passenger, passengerId)){
                     count++;
                 }
             }

@@ -61,6 +61,6 @@ public class AirportService {
     }
 
     public String addPassenger(Passenger passenger){
-        return addPassenger(passenger);
+        return airportRepository.addPassenger(passenger);
     }
 }
