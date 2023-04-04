@@ -19,7 +19,7 @@ public class AirportService {
     }
 
     public String largestAirPortName(){
-        return airportRepository.largestAirPortName();;
+        return airportRepository.largestAirPortName();
     }
 
     public String addFlight(Flight flight){
@@ -32,7 +32,7 @@ public class AirportService {
 
     public int noOfpeople(Date date, String airportName){
 
-        return airportRepository.noOfpeople(date, airportName);;
+        return airportRepository.noOfpeople(date, airportName);
     }
 
     public int flightFair(int flightId){
